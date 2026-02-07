@@ -79,7 +79,7 @@ Choose the setup based on how you want to run the application.
 
 > This is only required if you want to run the API directly on your host machine.
 
-**Option 2: Using Docker (Recommended)**
+**Option 2: Using Docker**
 
 - Docker installed on your system.
 
