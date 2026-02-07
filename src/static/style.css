@@ -1,0 +1,27 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #020617;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 2.5rem 3rem;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.35rem 0.8rem;
+  background: #22c55e;
+  color: #022c22;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}

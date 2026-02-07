@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubernetes-test-app
+spec:
+  replicas: 2 # number of pods to run
+  selector:
+    matchLabels:
+      app: kubernetes-test-app
+  template:
+    metadata:
+      labels:
+        app: kubernetes-test-app
+    spec:
+      containers:
+      - name: kubernetes-test-app
+        image: fastapi-k8s-orchestration:latest # comment this line if pulling from Docker Hub
+        imagePullPolicy: Never # Use local image, do not pull from registry || comment this line if pulling from Docker Hub
+        # image: aaaaarrp/fastapi-k8s-orchestration:latest  # Use image pulled from Docker Hub
+        # imagePullPolicy: Always # Pull from Docker Hub || comment this line if using local image
+        resources:
+          limits:
+            memory: "64Mi"
+            cpu: "200m"
+          requests:
+            memory: "32Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 9696

@@ -1,0 +1,15 @@
+[project]
+name = "fastapi-k8s-orchestration"
+version = "0.1.0"
+description = "A minimal FastAPI application with HTML/CSS for Kubernetes deployment"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "jinja2",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff",
+]
