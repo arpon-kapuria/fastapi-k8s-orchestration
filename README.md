@@ -85,7 +85,7 @@ Choose the setup based on how you want to run the application.
 
 > No need to install Python, uv, or packages locally. Docker contains everything.
 
-### **Option 3: Using Kubernetes (Minikube)**
+**Option 3: Using Kubernetes (Minikube)**
 
 - Docker
 - Minikube
