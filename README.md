@@ -118,7 +118,7 @@ uv sync --locked
 
 ```bash
 # Run the FastAPI application locally 
-uv run uvicorn src.predict:app --host 0.0.0.0 --port 9696 --reload
+uv run uvicorn src.app:app --host 0.0.0.0 --port 9696 --reload
 
 # --host 0.0.0.0 makes it accessible from all network interfaces
 # --port 9696 sets the port to 9696
